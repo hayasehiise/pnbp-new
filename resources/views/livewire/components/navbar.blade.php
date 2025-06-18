@@ -1,12 +1,12 @@
 <div>
     <div class="navbar bg-base-100 shadow-sm">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl">Test</a>
+            <a class="btn btn-ghost text-xl">PNBP</a>
         </div>
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1">
-                <li><a>Link</a></li>
-                <li>
+                <li><a>Logout</a></li>
+                {{-- <li>
                     <details>
                         <summary>Parent</summary>
                         <ul class="bg-base-100 rounded-t-none p-2">
@@ -14,7 +14,7 @@
                             <li><a>Link 2</a></li>
                         </ul>
                     </details>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </div>
