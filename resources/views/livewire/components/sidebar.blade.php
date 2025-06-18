@@ -7,7 +7,7 @@
                 <ul>
                     <li><a href="/master-data/bandar-udara">Bandara Udara</a></li>
                     <li><a href="/master-data/operator-penerbangan">Operator Penerbangan</a></li>
-                    <li><a href="/master-data/data-sum-penerbangan">Data Total Penerbangan</a></li>
+                    <li><a href="/master-data/data-no-penerbangan">Data No. Penerbangan</a></li>
                     <li><a href="/master-data/data-rute">Data Rute</a></li>
                     {{-- <li>
                         <details>

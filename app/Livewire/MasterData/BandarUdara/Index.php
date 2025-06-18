@@ -8,6 +8,6 @@ class Index extends Component
 {
     public function render()
     {
-        return view('livewire.master-data.bandar-udara.index');
+        return view('livewire.master-data.bandar-udara.index', ['master_menu' => 'open']);
     }
 }
