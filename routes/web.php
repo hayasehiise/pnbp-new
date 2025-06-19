@@ -23,7 +23,13 @@ use App\Livewire\MasterData\DataRegisticMark\Add as DataRegisticMarkCreate;
 use App\Livewire\MasterData\DataRegisticMark\Edit as DataRegisticMarkEdit;
 use App\Livewire\MasterData\DataTarif\Index as DataTarifIndex;
 use App\Livewire\MasterData\DataTarif\Add as DataTarifCreate;
-use App\Livewire\MasterData\DataTarif\Edit as DataTArifEdit;
+use App\Livewire\MasterData\DataTarif\Edit as DataTarifEdit;
+use App\Livewire\MasterData\DataTenant\Index as DataTenantIndex;
+use App\Livewire\MasterData\DataTenant\Add as DataTenantCreate;
+use App\Livewire\MasterData\DataTenant\Edit as DataTenantEdit;
+use App\Livewire\MasterData\DataJenisRuangan\Index as DataJenisRuanganIndex;
+use App\Livewire\MasterData\DataJenisRuangan\Add as DataJenisRuanganCreate;
+use App\Livewire\MasterData\DataJenisRuangan\Edit as DataJenisRuanganEdit;
 
 Route::get('/', Homepage::class);
 
@@ -55,3 +61,10 @@ Route::get('/master-data/data-tarif', DataTarifIndex::class);
 Route::get('/master-data/data-tarif/edit', DataTarifEdit::class);
 Route::get('/master-data/data-tarif/add', DataTarifCreate::class);
 
+Route::get('/master-data/data-tenant', DataTenantIndex::class);
+Route::get('/master-data/data-tenant/edit', DataTenantEdit::class);
+Route::get('/master-data/data-tenant/add', DataTenantCreate::class);
+
+Route::get('/master-data/data-jenis-ruangan', DataJenisRuanganIndex::class);
+Route::get('/master-data/data-jenis-ruangan/edit', DataJenisRuanganEdit::class);
+Route::get('/master-data/data-jenis-ruangan/add', DataJenisRuanganCreate::class);
