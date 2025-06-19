@@ -1,3 +1,40 @@
 <div class="flex flex-col">
-    <h1 class=''>Master Data -> Bandara Udara Add Page</h1>
+    <h1 class=' text-3xl font-bold'>Data Bandara Udara</h1>
+    {{ Breadcrumbs::render('bandar-udara-add') }}
+    <br>
+    <div class="flex flex-col bg-white rounded-xl">
+        <div class="flex flex-row p-5">
+            <h2 class="text-xl font-semibold">Tambah Data Bandara Udara</h2>
+        </div>
+        <hr />
+        <form wire:submit="save">
+            <div class="flex flex-col p-5 gap-2.5">
+                <label class="input w-[30em]">
+                    <span class="label text-black">Nama Bandara</span>
+                    <input type="text" wire:model="form.nama_bandara" placeholder="Masukan Nama Bandara" />
+                </label>
+                <label class="input w-[24em]">
+                    <span class="label text-black">Nama Alias</span>
+                    <input type="text" wire:model="form.nama_alias" placeholder="Masukan Nama Alias" />
+                </label>
+                <label class="input w-[24em]">
+                    <span class="label text-black">Kode IATA</span>
+                    <input type="text" wire:model="form.kode_iata" placeholder="Masukan Kode IATA" />
+                </label>
+                <label class="input w-[30em]">
+                    <span class="label text-black">Lokasi</span>
+                    <input type="text" wire:model="form.lokasi" placeholder="Masukan Lokasi Bandara" />
+                </label>
+                <label class="input w-[30em]">
+                    <span class="label text-black">Provinsi</span>
+                    <input type="text" wire:model="form.provinsi" placeholder="Masukan Provinsi Bandara" />
+                </label>
+            </div>
+            <hr />
+            <div class="flex flex-row p-5 gap-2.5">
+                <button class="btn btn-success" type="submit">Save</button>
+                <button class="btn btn-soft btn-error">Reset</button>
+            </div>
+        </form>
+    </div>
 </div>
