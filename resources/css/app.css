@@ -3,5 +3,5 @@
 @import "../../vendor/livewire/flux/dist/flux.css";
 
 @plugin "daisyui" {
-    themes: winter --default;
+    themes: light --default, dark --prefersdark, winter;
 }

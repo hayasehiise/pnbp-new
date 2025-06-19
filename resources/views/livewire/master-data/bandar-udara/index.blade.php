@@ -10,4 +10,36 @@
             <span>{{ session('status') }}</span>
         </div>
     @endif
+    <div class="overflow-x-auto">
+        <table class="table">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nama Bandara</th>
+                    <th>Nama Alias</th>
+                    <th>Kode IATA</th>
+                    <th>Lokasi</th>
+                    <th>Provinsi</th>
+                    <th colspan="2" class=" text-center">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($data as $item)
+                    <!-- data -->
+                    <tr class="hover:bg-base-300">
+                        <th>{{ $item->id }}</th>
+                        <td>{{ $item->nama_bandara }}</td>
+                        <td>{{ $item->nama_alias }}</td>
+                        <td>{{ $item->kode_iata }}</td>
+                        <td>{{ $item->lokasi }}</td>
+                        <td>{{ $item->provinsi }}</td>
+                        <td>Edit</td>
+                        <td>Delete</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+    {{ $data->links('pagination::tailwind') }}
 </div>

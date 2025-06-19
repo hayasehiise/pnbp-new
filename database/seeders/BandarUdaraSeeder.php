@@ -13,20 +13,14 @@ class BandarUdaraSeeder extends Seeder
      */
     public function run(): void
     {
-        BandarUdara::create([
+        for ($i = 1; $i <= 10; $i++){
+            BandarUdara::create([
             'nama_bandara' => 'Mutiara SIS Al-Jufri',
             'nama_alias' => 'PLW',
-            'kode_iata' => 'PLW13',
+            'kode_iata' => 'PLW'.$i,
             'lokasi' => 'Kota Palu',
             'provinsi' => 'Sulawesi Tengah',
         ]);
-
-        BandarUdara::create([
-            'nama_bandara' => 'Tanjung Api',
-            'nama_alias' => 'TJG',
-            'kode_iata' => 'TJG10',
-            'lokasi' => 'Ampana',
-            'provinsi' => 'Sulawesi Tengah',
-        ]);
+        }
     }
 }
