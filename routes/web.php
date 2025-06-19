@@ -15,6 +15,15 @@ use App\Livewire\MasterData\DataNoPenerbangan\Edit as DataNoPenerbanganEdit;
 use App\Livewire\MasterData\DataRute\Index as DataRuteIndex;
 use App\Livewire\MasterData\DataRute\Add as DataRuteCreate;
 use App\Livewire\MasterData\DataRute\Edit as DataRuteEdit;
+use App\Livewire\MasterData\DataAircraftType\Add as DataAircraftTypeCreate;
+use App\Livewire\MasterData\DataAircraftType\Edit as DataAircraftTypeEdit;
+use App\Livewire\MasterData\DataAircraftType\Index as DataAircraftTypeIndex;
+use App\Livewire\MasterData\DataRegisticMark\Index as DataRegisticMarkIndex;
+use App\Livewire\MasterData\DataRegisticMark\Add as DataRegisticMarkCreate;
+use App\Livewire\MasterData\DataRegisticMark\Edit as DataRegisticMarkEdit;
+use App\Livewire\MasterData\DataTarif\Index as DataTarifIndex;
+use App\Livewire\MasterData\DataTarif\Add as DataTarifCreate;
+use App\Livewire\MasterData\DataTarif\Edit as DataTArifEdit;
 
 Route::get('/', Homepage::class);
 
@@ -33,4 +42,16 @@ Route::get('/master-data/data-no-penerbangan/edit', DataNoPenerbanganEdit::class
 Route::get('/master-data/data-rute', DataRuteIndex::class);
 Route::get('/master-data/data-rute/add', DataRuteCreate::class);
 Route::get('/master-data/data-rute/edit', DataRuteEdit::class);
+
+Route::get('/master-data/data-aircraft-type', DataAircraftTypeIndex::class);
+Route::get('/master-data/data-aircraft-type/edit', DataAircraftTypeEdit::class);
+Route::get('/master-data/data-aircraft-type/add', DataAircraftTypeCreate::class);
+
+Route::get('/master-data/data-registic-mark', DataRegisticMarkIndex::class);
+Route::get('/master-data/data-registic-mark/edit', DataRegisticMarkEdit::class);
+Route::get('/master-data/data-registic-mark/add', DataRegisticMarkCreate::class);
+
+Route::get('/master-data/data-tarif', DataTarifIndex::class);
+Route::get('/master-data/data-tarif/edit', DataTarifEdit::class);
+Route::get('/master-data/data-tarif/add', DataTarifCreate::class);
 

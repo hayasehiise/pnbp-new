@@ -6,17 +6,30 @@
                 <summary>Master Data</summary>
                 <ul>
                     <li><a href="/master-data/bandar-udara"
-                            class="{{ $currentActive->is('master-data/bandar-udara') ? 'menu-active' : '' }}">Bandara
+                            class="{{ $currentActive->is('master-data/bandar-udara*') ? 'menu-active' : '' }}">Bandara
                             Udara</a>
                     </li>
                     <li><a href="/master-data/operator-penerbangan"
-                            class="{{ $currentActive->is('master-data/operator-penerbangan') ? 'menu-active' : '' }}">Operator
+                            class="{{ $currentActive->is('master-data/operator-penerbangan*') ? 'menu-active' : '' }}">Operator
                             Penerbangan</a></li>
                     <li><a href="/master-data/data-no-penerbangan"
-                            class="{{ $currentActive->is('master-data/data-no-penerbangan') ? 'menu-active' : '' }}">Data
+                            class="{{ $currentActive->is('master-data/data-no-penerbangan*') ? 'menu-active' : '' }}">Data
                             No. Penerbangan</a></li>
                     <li><a href="/master-data/data-rute"
-                            class="{{ $currentActive->is('master-data/data-rute') ? 'menu-active' : '' }}">Data Rute</a>
+                            class="{{ $currentActive->is('master-data/data-rute*') ? 'menu-active' : '' }}">Data
+                            Rute</a>
+                    </li>
+                    <li><a href="/master-data/data-aircraft-type"
+                            class="{{ $currentActive->is('master-data/data-aircraft-type*') ? 'menu-active' : '' }}">Data
+                            Tipe Aircraft</a>
+                    </li>
+                    <li><a href="/master-data/data-registic-mark"
+                            class="{{ $currentActive->is('master-data/data-registic-mark*') ? 'menu-active' : '' }}">Data
+                            Registic Mark</a>
+                    </li>
+                    <li><a href="/master-data/data-tarif"
+                            class="{{ $currentActive->is('master-data/data-tarif*') ? 'menu-active' : '' }}">Data
+                            Tarif</a>
                     </li>
                     {{-- <li>
                         <details>
