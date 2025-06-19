@@ -6,18 +6,21 @@ use Livewire\Component;
 
 class Sidebar extends Component
 {
-    public $master_menu = '';
-    public $menu = '';
-    protected $listener = [
-        'menuResult' => 'openMenu',
-    ];
+    // public $isMasteData;
+    // public $masterDataMenu;
+    // public function mount() {
+    //     $this->isMasteData = request()->is("master-data*");
 
-    public function menuOpen($master_menu) {
-        $this->$menu = $master_menu;
-    }
-
+    //     if($this->isMasteData) {
+    //         $this->masterDataMenu = "open";
+    //     } else {
+    //         $this->masterDataMenu = "";
+    //     }
+    // }
     public function render()
     {
-        return view('livewire.components.sidebar');
+        return view('livewire.components.sidebar', [
+            'currentActive' => request(),
+        ]);
     }
 }
