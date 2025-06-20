@@ -3,5 +3,25 @@
 @import "../../vendor/livewire/flux/dist/flux.css";
 
 @plugin "daisyui" {
-    themes: light --default, dark --prefersdark, winter;
+    themes: winter --default, dark --prefersdark;
 }
+/* @plugin "daisyui/theme" {
+    name: "light";
+    default: true;
+    --color-primary: blue;
+    --color-primary-content: white;
+    --color-secondary: teal;
+    --color-secondary-content: ;
+    --color-accent: ;
+    --color-accent-content: ;
+    --color-neutral: ;
+    --color-neutral-content: ;
+    --color-base-100: ;
+    --color-base-200: ;
+    --color-base-300: ;
+    --color-base-content: black;
+    --color-info: ;
+    --color-info-content: ;
+    --color-success: green;
+    --color-success-content: white;
+} */

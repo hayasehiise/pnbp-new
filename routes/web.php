@@ -31,7 +31,7 @@ use App\Livewire\MasterData\DataJenisRuangan\Index as DataJenisRuanganIndex;
 use App\Livewire\MasterData\DataJenisRuangan\Add as DataJenisRuanganCreate;
 use App\Livewire\MasterData\DataJenisRuangan\Edit as DataJenisRuanganEdit;
 
-Route::get('/', Homepage::class);
+Route::get('/', Homepage::class)->name('dashboard');
 
 Route::get('/master-data/bandar-udara', BandarUdaraIndex::class)->name('bandar-udara.index');
 Route::get('/master-data/bandar-udara/add', BandarUdaraCreate::class)->name('bandar-udara.add');
@@ -41,30 +41,30 @@ Route::get('/master-data/operator-penerbangan', OperatorPenerbanganIndex::class)
 Route::get('/master-data/operator-penerbangan/add', OperatorPenerbanganCreate::class)->name('operator-penerbangan.add');
 Route::get('/master-data/operator-penerbangan/edit/{data?}', OperatorPenerbanganEdit::class)->name('operator-penerbangan.edit');
 
-Route::get('/master-data/data-no-penerbangan', DataNoPenerbanganIndex::class);
-Route::get('/master-data/data-no-penerbangan/add', DataNoPenerbanganCreate::class);
-Route::get('/master-data/data-no-penerbangan/edit', DataNoPenerbanganEdit::class);
+Route::get('/master-data/data-no-penerbangan', DataNoPenerbanganIndex::class)->name('data-no-penerbangan.index');
+Route::get('/master-data/data-no-penerbangan/add', DataNoPenerbanganCreate::class)->name('data-no-penerbangan.add');
+Route::get('/master-data/data-no-penerbangan/edit/{data?}', DataNoPenerbanganEdit::class)->name('data-no-penerbangan.edit');
 
-Route::get('/master-data/data-rute', DataRuteIndex::class);
-Route::get('/master-data/data-rute/add', DataRuteCreate::class);
-Route::get('/master-data/data-rute/edit', DataRuteEdit::class);
+Route::get('/master-data/data-rute', DataRuteIndex::class)->name('data-rute.index');
+Route::get('/master-data/data-rute/add', DataRuteCreate::class)->name('data-rute.add');
+Route::get('/master-data/data-rute/edit/{data?}', DataRuteEdit::class)->name('data-rute.edit');
 
-Route::get('/master-data/data-aircraft-type', DataAircraftTypeIndex::class);
-Route::get('/master-data/data-aircraft-type/edit', DataAircraftTypeEdit::class);
-Route::get('/master-data/data-aircraft-type/add', DataAircraftTypeCreate::class);
+Route::get('/master-data/data-aircraft-type', DataAircraftTypeIndex::class)->name('data-aircraft-type.index');
+Route::get('/master-data/data-aircraft-type/edit/{data?}', DataAircraftTypeEdit::class)->name('data-aircraft-type.edit');
+Route::get('/master-data/data-aircraft-type/add', DataAircraftTypeCreate::class)->name('data-aircraft-type.add');
 
-Route::get('/master-data/data-registic-mark', DataRegisticMarkIndex::class);
-Route::get('/master-data/data-registic-mark/edit', DataRegisticMarkEdit::class);
-Route::get('/master-data/data-registic-mark/add', DataRegisticMarkCreate::class);
+Route::get('/master-data/data-registic-mark', DataRegisticMarkIndex::class)->name('data-registric-mark.index');
+Route::get('/master-data/data-registic-mark/edit/{data?}', DataRegisticMarkEdit::class)->name('data-registric-mark.edit');
+Route::get('/master-data/data-registic-mark/add', DataRegisticMarkCreate::class)->name('data-registric-mark.add');
 
-Route::get('/master-data/data-tarif', DataTarifIndex::class);
-Route::get('/master-data/data-tarif/edit', DataTarifEdit::class);
-Route::get('/master-data/data-tarif/add', DataTarifCreate::class);
+Route::get('/master-data/data-tarif', DataTarifIndex::class)->name('data-tarif.index');
+Route::get('/master-data/data-tarif/edit/{data?)', DataTarifEdit::class)->name('data-tarif.edit');
+Route::get('/master-data/data-tarif/add', DataTarifCreate::class)->name('data-tarif.add');
 
-Route::get('/master-data/data-tenant', DataTenantIndex::class);
-Route::get('/master-data/data-tenant/edit', DataTenantEdit::class);
-Route::get('/master-data/data-tenant/add', DataTenantCreate::class);
+Route::get('/master-data/data-tenant', DataTenantIndex::class)->name('data-tenant.index');
+Route::get('/master-data/data-tenant/edit/{data?}', DataTenantEdit::class)->name('data-tenant.edit');
+Route::get('/master-data/data-tenant/add', DataTenantCreate::class)->name('data-tenant.add');
 
-Route::get('/master-data/data-jenis-ruangan', DataJenisRuanganIndex::class);
-Route::get('/master-data/data-jenis-ruangan/edit', DataJenisRuanganEdit::class);
-Route::get('/master-data/data-jenis-ruangan/add', DataJenisRuanganCreate::class);
+Route::get('/master-data/data-jenis-ruangan', DataJenisRuanganIndex::class)->name('data-jenis-ruangan.index');
+Route::get('/master-data/data-jenis-ruangan/edit/{data?}', DataJenisRuanganEdit::class)->name('data-jenis-ruangan.edit');
+Route::get('/master-data/data-jenis-ruangan/add', DataJenisRuanganCreate::class)->name('data-jenis-ruangan.add');

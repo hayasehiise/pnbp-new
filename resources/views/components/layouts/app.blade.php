@@ -17,7 +17,6 @@
                     <div class="grow p-5">{{ $slot }}</div>
             </div>
     </div>
-    @fluxScripts
 </body>
 
 </html>
