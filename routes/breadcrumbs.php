@@ -23,3 +23,9 @@ Breadcrumbs::for('bandar-udara-add', function(BreadcrumbTrail $trail){
     $trail->parent('bandar-udara');
     $trail->push('Tambah Bandara Udara', route('bandar-udara-add'));
 });
+
+//Master Data >> Bandara Udara >> Edit Bandara Udara
+Breadcrumbs::for('bandar-udara-edit', function(BreadcrumbTrail $trail){
+    $trail->parent('bandar-udara');
+    $trail->push('Edit Bandara Udara', route('bandar-udara-edit'));
+});

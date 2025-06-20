@@ -32,8 +32,14 @@
             </div>
             <hr />
             <div class="flex flex-row p-5 gap-2.5">
-                <button class="btn btn-success" type="submit">Save</button>
-                <button class="btn btn-soft btn-error">Reset</button>
+                <button class="btn btn-success" type="submit"><img src="{{ asset('asset/icons/save-icon.svg') }}"
+                        class="w-4" />
+                    Save
+                </button>
+                <a href='{{ route('bandar-udara-index') }}' class="btn btn-soft" wire:navigate>
+                    <img src="{{ asset('asset/icons/back-arrow.svg') }}" class="w-6" />
+                    Back
+                </a>
             </div>
         </form>
     </div>

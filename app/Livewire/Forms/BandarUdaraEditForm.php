@@ -2,11 +2,11 @@
 
 namespace App\Livewire\Forms;
 
+use Livewire\Form;
 use App\Models\BandarUdara;
 use Livewire\Attributes\Validate;
-use Livewire\Form;
 
-class BandaraUdaraAddForm extends Form
+class BandarUdaraEditForm extends Form
 {
     #[Validate('required')]
     public $nama_bandara = '';
@@ -19,14 +19,14 @@ class BandaraUdaraAddForm extends Form
     #[Validate('required')]
     public $provinsi = '';
 
-    public function store(){
+    public function store($dataId){
         $this->validate();
         $this->nama_bandara = ucwords(strtolower($this->nama_bandara));
         $this->nama_alias = ucwords(strtolower($this->nama_alias));
         $this->kode_iata = strtoupper($this->kode_iata);
         $this->lokasi = ucwords(strtolower($this->lokasi));
         $this->provinsi = ucwords(strtolower($this->provinsi));
-        BandarUdara::create([
+        BandarUdara::find($dataId)->update([
             "nama_bandara" => $this->nama_bandara,
             "nama_alias" => $this->nama_alias,
             "kode_iata" => $this->kode_iata,

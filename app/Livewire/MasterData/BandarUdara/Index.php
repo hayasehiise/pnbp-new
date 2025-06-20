@@ -10,6 +10,17 @@ class Index extends Component
 {
     use WithPagination;
 
+    public function destroyData($dataId){
+        $deleteData = BandarUdara::find($dataId);
+
+        if($deleteData){
+            $deleteData->delete();
+        }
+
+        session()->flash('status', 'Data Berhasil Dihapus');
+
+        return $this->redirect(route('bandar-udara-index'), navigate: true);
+    }
     public function render()
     {
         $bandaraUdaraData = BandarUdara::latest()->paginate(5);

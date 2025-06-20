@@ -35,7 +35,7 @@ Route::get('/', Homepage::class);
 
 Route::get('/master-data/bandar-udara', BandarUdaraIndex::class)->name('bandar-udara-index');
 Route::get('/master-data/bandar-udara/add', BandarUdaraCreate::class)->name('bandar-udara-add');
-Route::get('/master-data/bandar-udara/edit', BandarUdaraEdit::class)->name('bandar-udara-edit');
+Route::get('/master-data/bandar-udara/edit/{data?}', BandarUdaraEdit::class)->name('bandar-udara-edit');
 
 Route::get('/master-data/operator-penerbangan', OperatorPenerbanganIndex::class);
 Route::get('/master-data/operator-penerbangan/add', OperatorPenerbanganCreate::class);
