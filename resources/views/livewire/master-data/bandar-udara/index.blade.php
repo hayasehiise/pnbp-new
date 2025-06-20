@@ -6,7 +6,7 @@
         </div>
         @if ($data->isNotEmpty())
             <div class="flex my-auto">
-                <a class="btn btn-success" href={{ route('bandar-udara-add') }} wire:navigate>
+                <a class="btn btn-success" href={{ route('bandar-udara.add') }} wire:navigate>
                     <img src="{{ asset('asset/icons/add-icon.svg') }}" class="w-5" />
                     Tambah Data
                 </a>
@@ -52,7 +52,7 @@
                                 <td>{{ $item->provinsi }}</td>
                                 <td class=" w-16">
                                     <div class="tooltip" data-tip="Edit">
-                                        <a href="{{ route('bandar-udara-edit', ['data' => $item->id]) }}">
+                                        <a href="{{ route('bandar-udara.edit', ['data' => $item->id]) }}">
                                             <img src="{{ asset('asset/icons/edit-icon.svg') }}" />
                                         </a>
                                     </div>
@@ -82,7 +82,7 @@
                             <td colspan="8" class="text-center text-3xl font-bold">
                                 Data Kosong
                                 <br>
-                                <a class="btn btn-success" href={{ route('bandar-udara-add') }} wire:navigate>
+                                <a class="btn btn-success" href={{ route('bandar-udara.add') }} wire:navigate>
                                     <img src="{{ asset('asset/icons/add-icon.svg') }}" class="w-5" />
                                     Tambah Data
                                 </a>

@@ -18,7 +18,7 @@ class Add extends Component
 
         session()->flash('status', 'Data Bandara Udara Berhasil Ditambahkan');
 
-        return $this->redirect(route('bandar-udara-index'), navigate: true);
+        return $this->redirect(route('bandar-udara.index'), navigate: true);
     }
 
     public function render()

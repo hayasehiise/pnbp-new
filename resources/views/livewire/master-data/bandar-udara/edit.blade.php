@@ -36,7 +36,7 @@
                         class="w-4" />
                     Save
                 </button>
-                <a href='{{ route('bandar-udara-index') }}' class="btn btn-soft" wire:navigate>
+                <a href='{{ route('bandar-udara.index') }}' class="btn btn-soft" wire:navigate>
                     <img src="{{ asset('asset/icons/back-arrow.svg') }}" class="w-6" />
                     Back
                 </a>

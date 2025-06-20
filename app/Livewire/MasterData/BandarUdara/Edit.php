@@ -32,7 +32,7 @@ class Edit extends Component
 
         session()->flash('status', 'Data Bandara Udara Berhasil Diedit');
 
-        return $this->redirect(route('bandar-udara-index'), navigate: true);
+        return $this->redirect(route('bandar-udara.index'), navigate: true);
     }
     public function render()
     {

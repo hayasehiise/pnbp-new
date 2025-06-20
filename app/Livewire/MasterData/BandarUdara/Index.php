@@ -19,7 +19,7 @@ class Index extends Component
 
         session()->flash('status', 'Data Berhasil Dihapus');
 
-        return $this->redirect(route('bandar-udara-index'), navigate: true);
+        return $this->redirect(route('bandar-udara.index'), navigate: true);
     }
     public function render()
     {
